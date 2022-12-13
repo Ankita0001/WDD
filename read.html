@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Read Numbers
+        </title>
+    </head>
+    <body style = "text-align: center; font-size: 20px;  background-color:black;">    
+        <script >
+	        function count(n)
+            {
+                var x,pos=0,neg=0,zero=0;
+	            var i=0;
+                while(i!=n)
+                {
+                    x=prompt('Enter an integer: ');
+                    x=parseInt(x);
+                    if(x==0)
+                    {
+                        zero++;
+                    }
+                    else if(x<0)    
+                    {
+                        neg++;
+                    }
+                    else if(x>0)
+                    {
+                        pos++;
+                    } 
+                    i++;
+                }
+                document.write("<p style='color:whitesmoke; font-size:25px'><br><br>Negative count="+neg+"<br><br> Positive count="+pos+" <br><br> Zero="+zero+"</p>");
+            }
+            var x=prompt("How many numbers are you going to input");
+            count(x);
+        </script>
+    </body>
+</html>

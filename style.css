@@ -1,0 +1,20 @@
+img
+{
+    border: 10px solid red;
+}
+h1
+{
+    color:darkblue; font-family: Nimbus Mono PS; margin:0;
+}
+h2,h3
+{
+    color:darkblue; font-family:Dyuthi; margin:0;
+}
+p
+{
+    font-family: Z003; font-size: 22;
+}
+body
+{
+    background-color: aqua;
+}

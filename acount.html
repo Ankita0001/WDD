@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Account Details
+        </title>
+	<style>
+		p
+        {
+			font-size:25px;
+		}
+	</style>
+    </head>
+    <body style = "text-align: center; font-size: 20px;  background-color:chartreuse">
+        <script>
+            var n;
+		    document.write("<br><br><u><h2>Amount with each year is as follows:</u></h2><br><p style='margin:6px; color:blue; display:inline-block;'><u>Year</u></p><p  style='margin:6px; display:inline-block;'>&nbsp&nbsp&nbsp<u>Amount</u></p><br>");
+            n=parseInt(prompt("Tell the number of years for which you want to see the amount: "));
+            for(var i=1; i<=n; i++)
+            {
+                var A = 1000*(Math.pow((1 + (5/100)),i));
+                document.write("<p style='margin:6px; color:blue; display:inline-block; '>"+i+"</p><p  style='margin:6px; display:inline-block;'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+A+"</p><br>");
+            }
+        </script>
+    </body>
+</html>

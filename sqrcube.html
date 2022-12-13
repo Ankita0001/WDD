@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Square and Cube Table
+        </title>
+        <style>
+            body {font-family:Z003; background-color :rgb(249, 64, 92);}
+        </style>
+    </head>
+    <body style = "text-align: center; font-size: 30px;">
+        <u> <b> <h1> Square Cube Table </h1> </b> </u>
+        <script>
+            function num_sq(n)
+            {
+                return n*n;
+            }
+            function num_cr(n)
+            {
+                return n*n*n;
+            }
+            document.write("<br> <br>"+"<table border=10px solid black align=center cellspacing=10 cellpadding=5 bordercolor=black bgcolor=yellow >");
+            document.write("<tr>");
+            document.write("<th>Number</td>");
+            document.write("<th>Square</td>");
+            document.write("<th>Cube </td>");
+            document.write("</tr>");
+            for(var j=5;j<=15;j++)
+            {
+                document.write("<tr>");
+                document.write("<td> "+j+"<td> "+num_sq(j)+"<td> "+num_cr(j)+"<br>");
+                document.write("</td>");
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        </script>
+    </body>
+</html>
